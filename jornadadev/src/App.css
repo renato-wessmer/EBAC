@@ -1,7 +1,45 @@
-.App {
-  text-align: center;
+html{
+  scroll-snap-type:  y mandatory;
 }
 
+.App {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos{
+  height: 100vh;
+  max-height: 800px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  /*Comando abaixo fará com que não se exceda o tamanho da borda, scrollando o conteúdo*/
+  overflow: scroll;
+  scroll-snap-type:  y mandatory;
+  position: relative;
+}
+
+/* Esconder os comando para cada navegador
+    Esconde a scrollbar no chrome, safari e opera
+*/
+.app__videos::-webkit-scrollbar{
+  display: none;
+}
+
+/* Esconder os comando para cada navegador
+    Esconde a scrollbar no internet explorer, edge e firefox
+*/
+.app__videos::-webkit-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +74,5 @@
     transform: rotate(360deg);
   }
 }
+
+*/

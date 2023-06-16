@@ -1,0 +1,61 @@
+.videoFooter{
+    position: relative;
+    bottom: 20%;
+    /* 20% da borda inferior*/
+    color: white;
+    margin-left: 30px;
+}
+
+.videoFooter__text h3{
+    padding-bottom: 20px;
+}
+
+.videoFooter__text p{
+    padding-bottom: 20px;
+}
+
+.videoFooter__music{
+    display: flex;
+}
+
+.videoFooter__icon{
+
+}
+
+.videoFooterMusic__text{
+    width: 80%;
+    overflow-x: hidden;
+}
+
+.videoFooterMusic__text p{
+    animation: movieTheText 3s infinite linear;
+}
+
+.videoFooter__record{
+    animation: spinTheRecord 3s infinite linear;
+    /* o animation pega os parâmetros do Keyframes spinTheRecord para rotacionar a imagem, partindo de um ponto inicial em zero graus e terminando em 360 graus com um tempo de cilo de 2s o infinte cria o looping, e o linear evite que de a impressão que a imagem freie e recomeçe, faz com que não seja percebido isso */
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    height: 50px;
+    /* Para mudar a cor da imagem, usar o filter: invert(1) */
+    filter: invert(1);
+}
+
+@keyframes spinTheRecord {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes movieTheText {
+    0%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

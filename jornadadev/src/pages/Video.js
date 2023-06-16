@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import VideoFooter from './components/footer/VideoFooter'
 import "./Video.css"
 
 function Video() {
@@ -27,10 +28,12 @@ function Video() {
                 onClick={handdleStart}
                 /*liga looping do vídeo*/
                 loop
-                src="https://firebasestorage.googleapis.com/v0/b/video-2db61.appspot.com/o/X2Download.app-Que%20Bonito%20Gatito%20%23Shorts%20%23top-(720p60).mp4?alt=media&token=538b050d-b480-4995-a3a8-2ba5dcecc808"
-            >
+                src="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
+            ></video>
+            {/* Side bar */}    
 
-            </video>
+            {/* Footer */}  
+            <VideoFooter />
         </div>
     )
 }

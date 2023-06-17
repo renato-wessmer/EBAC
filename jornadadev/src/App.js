@@ -9,19 +9,19 @@ function App() {
           likes={111}
           messages={222}
           shares={333}
-          name="Paulo"
-          description="Bracker o goleiro"
-          music="Musica épica"
-          url="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
+          name="Renato futuro bolsista EBAC"
+          description="Metallica - Pokémon Theme"
+          music="Gotta catch"
+          url="https://firebasestorage.googleapis.com/v0/b/tiktok-ebac-46cbd.appspot.com/o/Primeiro_video_projeto_EBAC.mp4?alt=media&token=df1d7f74-0820-49cf-95a9-26deeed554fb"
         />
         <Video 
           likes={444}
           messages={555}
           shares={666}
-          name="Paulo"
-          description="Bracker o goleiro"
-          music="Musica épica"
-          url="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4?t=2023-05-22T19%3A40%3A47.052Z"
+          name="Renato futuro aluno EBAC"
+          description="Lula - Naruto Shippuden"
+          music="ブルーバード - Bluebird"
+          url="https://firebasestorage.googleapis.com/v0/b/tiktok-ebac-46cbd.appspot.com/o/Segundo_video_projeto_EBAC.mp4?alt=media&token=4e4d64c0-94d4-4965-a7c3-8ca9afe3c1d2"
         />
         <Video        
           likes={777}

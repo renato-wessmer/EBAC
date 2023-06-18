@@ -9,13 +9,13 @@ function App() {
   const [video, setVideos] = useState([])
 
   async function getVideos (){
-    const videosCollection = collection(db, "videos")
+    const videosCollection = collection(db, "videos") // o nome aqui deve ser igual ao dado dentro do firebase
     // firebase acessa o banco de dados e acessa a collection videos
 
     const videosSnapshot = await getDocs(videosCollection)
     // firebase após acessar a collection traz os dados da collection videos daquele momento
 
-    const videosList = videosSnapshot.docs.map(doc => doc.data())
+    const videosList = videosSnapshot.docs.map((doc) => doc.data())
     // Ve todas as informações da lista de videos
 
     setVideos(videosList)
@@ -43,33 +43,8 @@ function App() {
               url={intem.url}
             />  
           );
-        }) }
-
-        {/* <Video 
-          likes={444}
-          messages={555}
-          shares={666}
-          name="Renato futuro aluno EBAC"
-          description="Lula - Naruto Shippuden"
-          music="ブルーバード - Bluebird"
-          url="https://firebasestorage.googleapis.com/v0/b/tiktok-ebac-46cbd.appspot.com/o/Segundo_video_projeto_EBAC.mp4?alt=media&token=4e4d64c0-94d4-4965-a7c3-8ca9afe3c1d2"
-        />
-        <Video        
-          likes={777}
-          messages={888}
-          shares={999}
-          name="Paulo"
-          description="Bracker o goleiro"
-          music="Musica épica"
-        />
-        <Video           
-          likes={1010}
-          messages={1111}
-          shares={1212}
-          name="Paulo"
-          description="Bracker o goleiro"
-          music="Musica épica"
-        /> */}
+        }) }  
+      
       </div>
     </div>
   );

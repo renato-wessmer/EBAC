@@ -19,7 +19,7 @@ html{
   /*Comando abaixo fará com que não se exceda o tamanho da borda, scrollando o conteúdo*/
   overflow: scroll;
   scroll-snap-type:  y mandatory;
-  position: relative;
+  position: relative; 
 }
 
 /* Esconder os comando para cada navegador
@@ -37,42 +37,10 @@ html{
   scrollbar-width: none;
 }
 
-
-
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 440px){
+  .app__videos{
+    height: 100vh;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-*/

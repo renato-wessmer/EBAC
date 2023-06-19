@@ -46,5 +46,5 @@ function Video({likes,messages,shares,name,description,music,url}) {
         </div>
     )
 }
-
+        
 export default Video

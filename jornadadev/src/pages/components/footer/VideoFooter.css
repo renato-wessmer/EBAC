@@ -7,19 +7,15 @@
 }
 
 .videoFooter__text h3{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .videoFooter__text p{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .videoFooter__music{
     display: flex;
-}
-
-.videoFooter__icon{
-
 }
 
 .videoFooterMusic__text{
